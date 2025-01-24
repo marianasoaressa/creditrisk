@@ -3,7 +3,7 @@ Type: Package
 Title: Modeling for credit risk using decision tree
 Version: 0.1.0
 Author: Mariana Soaressa [aut, cre]
-Maintainer: Mariana Soares Sa <seu-email@dominio.com> [maintainer]
+Maintainer: Mariana Soares Sa <marianasoares.sa@gmail.com> [maintainer]
 Description: More about what it does (maybe more than one line).
         Continuation lines should be indented.
 License: What license is it under?
