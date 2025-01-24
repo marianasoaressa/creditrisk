@@ -35,7 +35,7 @@ devtools::install_github("marianasoaressa/creditrisk")
 ``` r
 library(dplyr)
 library(creditrisk)
-dataset <- read.csv('./base_modelo.csv')
+dataset <- read.csv('seucaminho/base_modelo.csv')
 
 run_modeling(dataset = dataset,
 target = "y",
