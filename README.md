@@ -20,7 +20,24 @@ O retorno do pacote é uma lista contendo o modelo de árvore de decisão treina
 Para instalar o pacote, o usuário precisa instalar em sua máquina o pacote devtools para fazer a instalação diretamente do GitHub:
 
 ### Instale o devtools caso não tenha instalado
+``` r
 install.packages("devtools")
+```
 
 ### Instale o pacote creditRisk diretamente do GitHub
+
+``` r
 devtools::install_github("marianasoaressa/creditrisk")
+```
+
+### Rodando o pacote
+``` r
+library(dplyr)
+library(creditrisk)
+dataset <- read.csv('./base_modelo.csv')
+
+run_modeling(dataset = dataset,
+target = "y",
+id_var = "id_var")
+```
+
