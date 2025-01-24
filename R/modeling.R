@@ -79,17 +79,16 @@ modeling <- function(dataset,
     tuneGrid = grid,                    # Tunnig do cp
     metric = "Accuracy")
 
-  # Ajuste final do modelo que foi otimizado com o melhor cp
+    # Ajuste final do modelo que foi otimizado com o melhor cp
   final_model <- rpart::rpart(
     as.formula(paste(target, "~ .")),
     data = train_data,
-    control = rpart.control(
+    control = rpart::rpart.control(
       cp = model_tree[["bestTune"]][["cp"]],
       minsplit = 20,  # num minimo de observacoes que um no precisa ter para ser dividido
       maxdepth = maxdepth   # define a profundidade maxima da arvore
     )
   )
-
   # Previsoes no conjunto de teste para calcular as metricas de acuracia
   predictions <- predict(final_model, newdata = test_data, type = "class")
 
