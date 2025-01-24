@@ -37,9 +37,6 @@ library(dplyr)
 library(creditrisk)
 dataset <- read.csv('seucaminho/base_modelo.csv')
 
-run_modeling(dataset = dataset,
-target = "y",
-id_var = "id_var")
 result_modeling <- run_modeling(dataset = dataset,
                                 target = "y",
                                 id_var = "id",
