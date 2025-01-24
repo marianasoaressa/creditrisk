@@ -2,7 +2,8 @@ Package: creditrisk
 Type: Package
 Title: Modeling for credit risk using decision tree
 Version: 0.1.0
-Authors@R: c( person( "Mariana Soares" ))
+Author: Mariana Soaressa [aut, cre]
+Maintainer: Mariana Soares Sa <seu-email@dominio.com> [maintainer]
 Description: More about what it does (maybe more than one line).
         Continuation lines should be indented.
 License: What license is it under?
